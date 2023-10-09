@@ -1,0 +1,54 @@
+//Problem 1
+ 
+
+ALGORITHM compare_two_array
+    tab1:[3,1,7,9];
+    tab2:[2,4,1,9,3];
+
+VAR
+    tab1: INTEGER[4]
+    tab2: INTEGER[5]
+    a:INTEGER
+    b: INTEGER
+    Sum: INTEGER=0
+
+BEGIN
+    write ("give first tab");
+    Read (tab1);
+    write ("give second tab");
+    Read (tab2);
+
+IF (tab1[a]=tab2[b]) THEN
+    write("the tab do not have equal length");
+    BREAK
+END_IF
+FOR i FROM 0 TO tab1.length-1 DO
+    Read (tab1[a]);
+FOR i FROM 0 TO tab2.length-1 DO
+    Read(tab2[b])
+END_FOR
+END_FOR
+
+    else
+    sum:=tab1[a] + tab2[b]
+    write : (sum);
+
+END
+
+
+
+//problem 2
+
+ALGORITHM Array_of_procedure
+PROCEDURE Dot_product: (v1,v2);
+VAR
+    V1:INTEGER
+    V2:INTEGER
+    PS:INTEGER
+
+BEGIN
+    write(PS=v1*V2);
+IF (PS = 0) THEN
+    write("V1 and V2 are orthogonal");
+    BREAK
+END_IF
